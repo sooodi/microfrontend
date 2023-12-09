@@ -1,16 +1,16 @@
-name: deploy-container
+ name: deploy-container
 
-on: 
+ on: 
   push:
-    branchs:
+     branches:
         - main
-    paths:
-     - 'myproject_source_type2/container/**'
+     paths:
+        - 'myproject_source_type2/container/**'
 
-defaults:
+ defaults:
     run:
         working-directory: myproject_source_type2/container
-jobs:
+ jobs:
     build:
         runs-on: ubuntu-latest
 
