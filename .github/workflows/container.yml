@@ -1,16 +1,16 @@
- name: deploy-container
+name: deploy-container
 
- on: 
+on: 
   push:
      branches:
-        - main
+        - '*'
      paths:
         - 'microfrontend/container/**'
 
- defaults:
+defaults:
     run:
         working-directory: microfrontend/container
- jobs:
+jobs:
     build:
         runs-on: ubuntu-latest
 
