@@ -5,11 +5,11 @@
      branches:
         - main
      paths:
-        - 'myproject_source_type2/container/**'
+        - 'microfrontend/container/**'
 
  defaults:
     run:
-        working-directory: myproject_source_type2/container
+        working-directory: microfrontend/container
  jobs:
     build:
         runs-on: ubuntu-latest
