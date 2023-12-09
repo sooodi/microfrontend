@@ -18,11 +18,11 @@ on:
            branches:  
                  - '*'
            paths:
-                 - '/container/**'
+                 - './container/**'
 
 defaults:
     run:
-        working-directory: microfronend/container
+        working-directory: ./container
 jobs:
     build:
         runs-on: ubuntu-latest
